@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | MX Magazine</title>
+  <link rel="stylesheet" href="styles/styles/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html#home" class="logo" aria-label="Inicio">
+      <img src="images/logo-black.png" alt="MX Magazine">
+    </a>
+
+    <nav class="navigation" aria-label="Menú principal">
+      <a href="index.html#home">home</a>
+      <a href="index.html#origen">origen</a>
+      <a href="index.html#tradicion">tradicion</a>
+      <a href="noticias.html">noticias</a>
+      <a href="contacto.html" aria-current="page">contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- CONTACT BANNER -->
+    <section class="contact-banner">
+      <img src="images/city-mx.jpg"
+           alt="Vista panorámica de la Ciudad de México">
+    </section>
+
+    <!-- CONTACT PANEL -->
+    <section class="contact-page">
+      <div class="contact-panel">
+
+        <div class="contact-details">
+          <h1>Contacto</h1>
+
+          <p>
+            ¿Deseas contactar al staff de MX Magazine (temas
+            editoriales, web, publicidad o suscripciones)?<br>
+            Escríbenos, te responderemos a la brevedad.
+          </p>
+
+          <div class="contact-person">
+            <h2>Mx Comunicación</h2>
+            <p>
+              Adrian Ruiz<br>
+              Director General
+            </p>
+          </div>
+
+          <div class="contact-person">
+            <h2>Mx Magazine</h2>
+            <p>
+              Adrian Ruiz<br>
+              Director de contenidos<br>
+              <a href="mailto:a.ruiz@mx-magazine.com">
+                a.ruiz@mx-magazine.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-form-section">
+          <h2>Escríbenos</h2>
+
+          <form id="contactForm" class="contact-form">
+            <div class="contact-form-grid">
+
+              <div class="form-group">
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="nombre"
+                       autocomplete="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="correo">Correo*</label>
+                <input type="email" id="correo" name="correo"
+                       autocomplete="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">Telefono*</label>
+                <input type="tel" id="telefono" name="telefono"
+                       autocomplete="tel" required>
+              </div>
+
+              <div class="form-group">
+                <label for="empresa">Nombre de la empresa*</label>
+                <input type="text" id="empresa" name="empresa" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="asunto">Asunto*</label>
+                <input type="text" id="asunto" name="asunto" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="comentarios">Comentarios*</label>
+                <textarea id="comentarios" name="comentarios"
+                          rows="7" required></textarea>
+              </div>
+
+            </div>
+
+            <div class="contact-submit">
+              <button type="submit">ENVIAR</button>
+            </div>
+
+            <p id="contactStatus" class="form-status"
+               role="status" aria-live="polite"></p>
+          </form>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/logo-white.png" alt="MX Magazine">
+    </div>
+
+    <div class="footer-info">
+      <p>
+        +adrianruiz2026<br>
+        for educational purposes only.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

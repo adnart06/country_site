@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noticias | MX Magazine</title>
+  <link rel="stylesheet" href="styles/styles/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="index.html#home" class="logo" aria-label="Inicio">
+      <img src="images/logo-black.png" alt="MX Magazine">
+    </a>
+
+    <nav class="navigation" aria-label="Menú principal">
+      <a href="index.html#home">home</a>
+      <a href="index.html#origen">origen</a>
+      <a href="index.html#tradicion">tradicion</a>
+      <a href="noticias.html" aria-current="page">noticias</a>
+      <a href="contacto.html">contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- NEWS BANNER -->
+    <section class="news-banner">
+      <img src="images/news-banner.jpg"
+           alt="Catedral Metropolitana y Zócalo de la Ciudad de México">
+    </section>
+
+    <!-- NEWS CONTENT -->
+    <section class="news-page">
+      <div class="news-container">
+
+        <!-- INTRO -->
+        <div class="news-intro">
+          <h1>Cultura en movimiento</h1>
+
+          <p>
+            México es un universo de contrastes, creatividad y
+            tradiciones en constante evolución. Exploramos las
+            historias, tendencias y expresiones que redefinen
+            nuestra identidad a través del arte, el diseño
+            y la cultura contemporánea.
+          </p>
+
+          <h2>Enterate aqui!</h2>
+        </div>
+
+        <!-- SIX NEWS CARDS -->
+        <div class="news-grid">
+
+          <button class="news-card" type="button"
+                  data-news-title="Centro para la Cultura y las Artes de la Ribera: el corazón artístico del Lago de Chapala"
+                  data-news-image="images/news-1.jpg">
+            <img src="images/news-1.jpg"
+                 alt="Centro para la Cultura y las Artes de la Ribera"
+                 loading="lazy">
+            <span class="news-card-overlay">
+              <span class="news-card-title">
+                Centro para la Cultura y las Artes de la Ribera:
+                el corazón artístico del Lago de Chapala
+              </span>
+            </span>
+          </button>
+
+          <button class="news-card" type="button"
+                  data-news-title="«Amor eterno», una canción de Día de Muertos escrita por Juan Gabriel"
+                  data-news-image="images/news-2.jpg">
+            <img src="images/news-2.jpg"
+                 alt="Celebración nocturna de Día de Muertos"
+                 loading="lazy">
+            <span class="news-card-overlay">
+              <span class="news-card-title">
+                «Amor eterno», una canción de Día de Muertos
+                escrita por Juan Gabriel
+              </span>
+            </span>
+          </button>
+
+          <button class="news-card" type="button"
+                  data-news-title="Regresa la Noche de las Estrellas 2026 a la CDMX"
+                  data-news-image="images/news-3.jpg">
+            <img src="images/news-3.jpg"
+                 alt="Vista nocturna de una ciudad mexicana"
+                 loading="lazy">
+            <span class="news-card-overlay">
+              <span class="news-card-title">
+                Regresa la Noche de las Estrellas 2026
+                a la CDMX
+              </span>
+            </span>
+          </button>
+
+          <button class="news-card" type="button"
+                  data-news-title="Los altares callejeros en México, espacios de fe que pasan desapercibidos"
+                  data-news-image="images/news-4.jpg">
+            <img src="images/news-4.jpg"
+                 alt="Exposición cultural de altares mexicanos"
+                 loading="lazy">
+            <span class="news-card-overlay">
+              <span class="news-card-title">
+                Los altares callejeros en México,
+                espacios de fe que pasan desapercibidos
+              </span>
+            </span>
+          </button>
+
+          <button class="news-card" type="button"
+                  data-news-title="Festival de Día de Muertos Guanajuato 2026 tradiciones de ultratumba"
+                  data-news-image="images/news-5.jpg">
+            <img src="images/news-5.jpg"
+                 alt="Paisaje de Guanajuato"
+                 loading="lazy">
+            <span class="news-card-overlay">
+              <span class="news-card-title">
+                Festival de Día de Muertos Guanajuato 2026
+                tradiciones de ultratumba
+              </span>
+            </span>
+          </button>
+
+          <button class="news-card" type="button"
+                  data-news-title="Día Nacional de los Pueblos Mágicos: 25 años de celebrar a México"
+                  data-news-image="images/news-6.jpg">
+            <img src="images/news-6.jpg"
+                 alt="Paisaje de un Pueblo Mágico mexicano"
+                 loading="lazy">
+            <span class="news-card-overlay">
+              <span class="news-card-title">
+                Día Nacional de los Pueblos Mágicos:
+                25 años de celebrar a México
+              </span>
+            </span>
+          </button>
+
+        </div>
+
+        <!-- NEWSLETTER MOVED FROM CONTACT PAGE -->
+        <section class="news-newsletter">
+
+          <hr class="contact-divider">
+
+          <div class="newsletter">
+            <h2>Newsletter</h2>
+
+            <p>
+              Suscríbete a nuestra newsletter para recibir
+              nuestras novedades.
+            </p>
+
+            <h3>
+              Introduce tu dirección de e-mail para suscribirte!
+            </h3>
+
+            <form id="newsletterForm">
+              <label for="newsletterEmail" class="visually-hidden">
+                Correo electrónico
+              </label>
+
+              <input type="email"
+                     id="newsletterEmail"
+                     name="newsletterEmail"
+                     placeholder="EMAIL"
+                     autocomplete="email"
+                     required>
+
+              <p class="newsletter-hint">
+                Introduce tu dirección de e-mail para suscribirte.
+                Ej.: abc@xyz.com
+              </p>
+
+              <button type="submit">SUBSCRIBIRSE</button>
+
+              <p id="newsletterStatus" class="form-status"
+                 role="status" aria-live="polite"></p>
+            </form>
+          </div>
+
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- NEWS PREVIEW DIALOG -->
+  <dialog id="newsDialog" class="news-dialog"
+          aria-labelledby="newsDialogTitle">
+    <button type="button" class="news-dialog-close"
+            aria-label="Cerrar noticia">×</button>
+
+    <img id="newsDialogImage" src="images/news-1.jpg"
+         alt="Imagen de la noticia">
+
+    <h2 id="newsDialogTitle"></h2>
+
+    <p>
+      Vista previa de la noticia. Próximamente podrás leer
+      el artículo completo en MX Magazine.
+    </p>
+  </dialog>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/logo-white.png" alt="MX Magazine">
+    </div>
+
+    <div class="footer-info">
+      <p>
+        +adrianruiz2026<br>
+        for educational purposes only.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
