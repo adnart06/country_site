@@ -1,6 +1,12 @@
 
 /* ==========================================
-  
+   MX MAGAZINE
+   COMPLETE STYLESHEET
+   MOBILE FIRST + DESKTOP
+========================================== */
+
+
+/* ==========================================
    1. GENERAL
 ========================================== */
 
@@ -496,7 +502,7 @@ main {
 }
 
 
-/* NEWS CARDS */
+/* SIX NEWS CARDS */
 
 .news-grid {
   display: grid;
@@ -555,7 +561,7 @@ main {
 }
 
 
-/* NEWSLETTER POSITION */
+/* NEWSLETTER PLACEMENT */
 
 .news-newsletter {
   margin-top: 75px;
@@ -645,7 +651,7 @@ main {
 
 
 /* ==========================================
-   12. NEWS INTRO
+   12. NEWS PREVIEW DIALOG
 ========================================== */
 
 .news-dialog {
@@ -691,7 +697,7 @@ main {
 
 
 /* ==========================================
-   13. ACCESSIBILITY CORRECTION AI
+   13. ACCESSIBILITY
 ========================================== */
 
 .visually-hidden {
@@ -741,7 +747,7 @@ main {
 
 
 /* ==========================================
-   15. DESKTOP 
+   15. DESKTOP - 768px AND ABOVE
 ========================================== */
 
 @media (min-width: 768px) {
@@ -857,7 +863,7 @@ main {
     height: 420px;
   }
 
-  /* CONTACT SECTION */
+  /* CONTACT PANEL */
 
   .contact-panel {
     width: 75%;
